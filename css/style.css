@@ -1,0 +1,108 @@
+html, body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial,Helvetica,sans-serif;
+	font-size: 1em;
+    background-color: #101820;
+    color: white;
+}
+
+a, a:visited{
+    color: white;
+    text-decoration: underline;
+}
+  
+a:hover {
+    color: #d1be10;
+    text-decoration: underline;
+    font-style: italic;
+}
+  
+a:active {
+    color: #FEE715;
+}
+
+input[type=text] {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 2px solid #FEE715;
+    border-color: #FEE715;
+    border-radius: .25vw;
+    background-color: whitesmoke;
+    font-size: 1em;
+}
+
+.ui-button {
+    border: 2px solid #FEE715;
+}
+
+.ui-button:hover {
+    border: 2px solid #FEE715;
+    background-color: #d1be10;
+}
+
+.ui-button:active {
+    border: 2px solid #FEE715;
+    background-color: #FEE715;
+}
+
+#box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1vw 1vw;
+    align-items: center;
+}
+
+.track {
+    border-radius: .25vw;
+}
+
+#box h1, #box h2, #box button {
+    grid-column: 1 / span 2;
+    margin: 0;
+}
+
+#box label {
+    vertical-align: middle;
+}
+
+#info {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw 1vw;
+    margin-top: 1vw;
+}
+
+#artist {
+    grid-column: 2;
+}
+
+#name {
+    margin:0;
+    margin-bottom: 1vw;
+    font-size: 3em;
+}
+
+#one {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#two {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#three {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+#pfp {
+    border-radius: 50%;
+    width: 22.5vw;
+}
+
